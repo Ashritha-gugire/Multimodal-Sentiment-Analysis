@@ -466,10 +466,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-# Now save it to a file
-#with open('C:\\Users\\ashri\\Documents\\multimodal Sentiment Analysis\\multimodal_sentiment_app.py', 'w') as f:
-   # f.write(multimodal_code)
-
-#print("Created multimodal_sentiment_app.py successfully!")
