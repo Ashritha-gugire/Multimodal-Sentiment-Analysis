@@ -472,4 +472,4 @@ if __name__ == "__main__":
 #with open('C:\\Users\\ashri\\Documents\\multimodal Sentiment Analysis\\multimodal_sentiment_app.py', 'w') as f:
    # f.write(multimodal_code)
 
-#print("✅ Created multimodal_sentiment_app.py successfully!")
+#print("Created multimodal_sentiment_app.py successfully!")
