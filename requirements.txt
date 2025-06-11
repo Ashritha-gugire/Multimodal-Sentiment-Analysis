@@ -1,34 +1,10 @@
-# Core Framework
-streamlit>=1.28.0
-
-# PyTorch (CPU version for faster deployment)
-torch>=2.0.0+cpu
-torchvision>=0.15.0+cpu
-torchaudio>=2.0.0+cpu
---find-links https://download.pytorch.org/whl/torch_stable.html
-
-# OR use this simpler version if above doesn't work:
-torch>=2.0.0
-torchvision>=0.15.0
-torchaudio>=2.0.0
-
-# Transformers and ML
-transformers>=4.30.0
-tokenizers>=0.13.0
-
-# Computer Vision & Image Processing
-opencv-python-headless>=4.8.0
-Pillow>=10.0.0
-
-# Data Processing & Analysis
-numpy>=1.24.0
-pandas>=2.0.0
-
-# Visualization
-plotly>=5.15.0
-
-# Natural Language Processing
-textblob>=0.17.1
-
-# Utilities
-regex>=2023.6.3
+# Lightweight requirements.txt for Streamlit Cloud
+streamlit==1.28.0
+torch==2.0.1
+transformers==4.30.2
+opencv-python-headless==4.8.0.76
+Pillow==10.0.0
+numpy==1.24.3
+pandas==2.0.3
+plotly==5.15.0
+textblob==0.17.1

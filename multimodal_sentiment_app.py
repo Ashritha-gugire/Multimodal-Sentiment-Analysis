@@ -1,21 +1,30 @@
 # Run this cell to create the complete multimodal_sentiment_app.py file
 
 import streamlit as st
-import torch
-from transformers import (
-    AutoTokenizer, AutoModelForSequenceClassification,
-    CLIPProcessor, CLIPModel, pipeline
-)
-from PIL import Image
-import cv2
-import numpy as np
-import pandas as pd
-import plotly.express as px
-import plotly.graph_objects as go
-from textblob import TextBlob
-import re
-import io
-import base64
+# Add this error handling section
+try:
+    import torch
+    import transformers
+    from transformers import (
+        AutoTokenizer, AutoModelForSequenceClassification,
+        CLIPProcessor, CLIPModel, pipeline
+    )
+    from PIL import Image
+    import cv2
+    import numpy as np
+    import pandas as pd
+    import plotly.express as px
+    import plotly.graph_objects as go
+    from textblob import TextBlob
+    import re
+    import io
+    import base64
+    
+except ImportError as e:
+    st.error(f" Missing dependency: {e}")
+    st.info(" Dependencies are still being installed. Please wait 2-3 minutes and refresh the page.")
+    st.info(" This is normal for the first deployment as PyTorch models are large.")
+    st.stop()
 
 class MultimodalSentimentAnalyzer:
     def __init__(self):
